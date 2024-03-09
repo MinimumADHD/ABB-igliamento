@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personalizza abbigliamento</title>
-    <link rel="stylesheet" href="editor.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="editor_header">
-        <div class="header_button">
-            <object data="shopping_cart.svg"></object>
-            <input type="button" value="Carrello" id="shopping_cart">
-        </div>
-        <div class="header_button">
-            <object data="truck.svg" type=""></object>
-            <input type="button" value="Stato ordini" id="order_listing">
-        </div>
-        <div class="header_button">
-            <object data="profile_icon.svg" type=""></object>
-            <input type="button" value="Profilo" id="profile_page">
+
+<body class="bg-slate-900 m-100%">
+    <div
+        class="sticky top-0 z-40 w-full bg-primary shadow-lg flex justify-between items-center p-4 bg-slate-800/90 font-spacemono">
+        <h1 class="text-xl font-mono font-semibold text-slate-300">Personalizzazione Prodotto</h1>
+        <div class="flex space-x-4 text-slate-300 ">
+            <p>Sito hostato da: <a href="https://github.com/MinimumADHD"
+                    class="hover:text-slate-400 visited:text-slate-500">MinimumADHD</a></p>
+            <input type="button" value="Preferiti" class="btn hover:text-slate-400">
+            <input type="button" value="Ordini" class="btn hover:text-slate-400">
+            <input type="button" value="Profilo" class="btn hover:text-slate-400">
         </div>
     </div>
-    <div class="main_page"></div>
+    <div id="body_div">
+        <h1 class="text-center text-4xl text-slate-300 font-spacemono font-semibold">Vuoi modificare qualcosa?</h1>
+        <div id="card_container" class="flex justify-end">
+            <div id="card_" class="rounded-lg w-[400px] h-[400px] bg-slate-800 p-1 m-1"></div>
+        </div>
+    </div>
 </body>
+
 </html>
