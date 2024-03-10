@@ -8,49 +8,81 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-gradient-to-t from-slate-300 to-slate-500" style="height: 100vh;"></body>
-    <header class="bg-gray-800 py-4 shadow-lg">
+<body class="bg-gradient-to-t from-slate-300 to-slate-500" style="height: 100vh;">
+    <header class="bg-gray-600 py-4 shadow-lg">
         <div class="container mx-auto flex justify-between items-center px-4">
             <h1 class="text-xl font-bold text-gray-100">Personalizzazione Prodotto</h1>
             <div class="flex space-x-4 text-gray-100 font-spacemono">
-                <p>Sito hostato da: <a href="https://github.com/MinimumADHD" class="hover:text-gray-300">MinimumADHD</a></p>
+                <p>Sito hostato da: <a href="https://github.com/MinimumADHD" class="hover:text-gray-300">MinimumADHD</a>
+                </p>
                 <button class="btn hover:text-gray-300">Preferiti</button>
                 <button class="btn hover:text-gray-300">Ordini</button>
                 <button class="btn hover:text-gray-300">Profilo</button>
             </div>
         </div>
     </header>
-    <div class="container mx-auto py-8">
-        <h1 class="text-center text-4xl text-gray-100 font-spacemono font-semibold mb-8">Vuoi modificare qualcosa?</h1>
-        <div class="flex justify-center items-center space-x-8">
-            <div class="text-gray-100 font-spacemono">
-                <h2 class="text-2xl font-semibold mb-4">Options</h2>
-                <div class="grid grid-cols-1 gap-4">
-                    <button id="option1" class="btn-option">
-                        <img src="placeholder.png" alt="Option 1" class="w-24 h-24 object-cover rounded-lg">
-                    </button>
-                    <button id="option2" class="btn-option">
-                        <img src="placeholder.png" alt="Option 2" class="w-24 h-24 object-cover rounded-lg">
-                    </button>
-                    <button id="option3" class="btn-option">
-                        <img src="placeholder.png" alt="Option 3" class="w-24 h-24 object-cover rounded-lg">
-                    </button>
-                    <button id="option4" class="btn-option">
-                        <img src="placeholder.png" alt="Option 4" class="w-24 h-24 object-cover rounded-lg">
-                    </button>
-                    <button id="option5" class="btn-option">
-                        <img src="placeholder.png" alt="Option 5" class="w-24 h-24 object-cover rounded-lg">
-                    </button>
-                    <button id="option6" class="btn-option">
-                        <img src="placeholder.png" alt="Option 6" class="w-24 h-24 object-cover rounded-lg">
-                    </button>
-                </div>
+    <main>
+        <div id="preview" class="flex justify-center items-center p-5 m-5">
+            <img src="felpa-girocollo-organica-uomo.webp" alt="Giorgio" class="rounded-xl w-[500px] h-[500px]">
+        </div>
+        <div id="buttons" class="flex justify-center items-center grid-rows-1 p-2 m-1">
+            <label>
+                <input type="checkbox" name="options[]" value="Cappuccio" class="p-2 bg-white rounded-lg w-50 h-50"
+                    onclick="showSelectionBox('cappuccio')">
+                Cappuccio
+            </label>
+            <div id="cappuccioSelectionBox" style="display: none;">
+                <select>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                </select>
             </div>
-            <div class="w-96 h-96 bg-gray-200 flex justify-center items-center rounded-lg">
-                <img src="felpa-girocollo-organica-uomo.webp" class="w-80 h-80 object-cover rounded-lg">
+            <label>
+                <input type="checkbox" name="options[]" value="Coulisse" class="p-2 bg-white rounded-lg w-50 h-50"
+                    onclick="showSelectionBox('coulisse')">
+                Coulisse
+            </label>
+            <div id="coulisseSelectionBox" style="display: none;">
+                <select>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                </select>
+            </div>
+            <label>
+                <input type="checkbox" name="options[]" value="Tasca di canguro"
+                    class="p-2 bg-white rounded-lg w-50 h-50" onclick="showSelectionBox('tascaDiCanguro')">
+                Tasca di canguro
+            </label>
+            <div id="tascaDiCanguroSelectionBox" style="display: none;">
+                <select>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                </select>
+            </div>
+            <label>
+                <input type="checkbox" name="options[]" value="Zip" class="p-2 bg-white rounded-lg w-50 h-50"
+                    onclick="showSelectionBox('zip')">
+                Zip
+            </label>
+            <div id="zipSelectionBox" style="display: none;">
+                <select>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                </select>
             </div>
         </div>
-    </div>
+
+        <script>
+            function showSelectionBox(id) {
+                var selectionBox = document.getElementById(id + "SelectionBox");
+                if (selectionBox.style.display === "none") {
+                    selectionBox.style.display = "block";
+                } else {
+                    selectionBox.style.display = "none";
+                }
+            }
+        </script>
+    </main>
 </body>
 
 </html>
