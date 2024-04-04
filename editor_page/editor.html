@@ -9,8 +9,23 @@
 </head>
 
 <body class="bg-gradient-to-t from-background-900 to-background-800 h-[100vh]">
-  <header class="flex justify-center align-middle items-center h-[60px] w-full min-w-[90%] bg-primary-950">
+  <header
+    class="flex justify-between align-middle items-center h-[60px] w-full min-w-[90%] bg-secondary-950 text-background-500 px-3 font-spacemono">
+    <input type="button" value="HOME" id="HomeButton">
+    <input type="button" value="CAMDIG" id="ARLocker">
+    <input type="button" value="HOME">
   </header>
+  <main class="text-accent-200">
+    <div class="flex justify-center items-center align-middle m-3 p-3 font-fira text-center">
+      <div class="flex m-3 p-3">
+        <input id="backward_button" type="button" value="<" class="w-[80px] h-[80px] rounded-md text-[70px]">
+      </div>
+      <img id="showcase_img" src="placeholder.png" alt="" class="flex rounded-xl shadow-xl w-[500px] h-[500px]">
+      <div class="flex m-3 p-3">
+        <input id="forward_button" type="button" value=">" class="w-[80px] h-[80px] rounded-md text-[70px]">
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
