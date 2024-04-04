@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personalizza abbigliamento</title>
-    <link rel="stylesheet" href="editor.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personalizza abbigliamento</title>
+  <link rel="stylesheet" href="../style.css" />
 </head>
-<body>
-    <div class="editor_header">
-        <div class="header_button">
-            <object data="shopping_cart.svg"></object>
-            <input type="button" value="Carrello" id="shopping_cart">
-        </div>
-        <div class="header_button">
-            <object data="truck.svg" type=""></object>
-            <input type="button" value="Stato ordini" id="order_listing">
-        </div>
-        <div class="header_button">
-            <object data="profile_icon.svg" type=""></object>
-            <input type="button" value="Profilo" id="profile_page">
-        </div>
+
+<body class="bg-gradient-to-t from-background-900 to-background-800 h-[100vh]">
+  <header
+    class="flex justify-between align-middle items-center h-[60px] w-full min-w-[90%] bg-secondary-950 text-background-500 px-3 font-spacemono">
+    <input type="button" value="HOME" id="HomeButton">
+    <input type="button" value="CAMDIG" id="ARLocker">
+    <input type="button" value="HOME">
+  </header>
+  <main class="text-accent-200">
+    <div class="flex justify-center items-center align-middle m-3 p-3 font-fira text-center">
+      <div class="flex m-3 p-3">
+        <input id="backward_button" type="button" value="<" class="w-[80px] h-[80px] rounded-md text-[70px]">
+      </div>
+      <img id="showcase_img" src="placeholder.png" alt="" class="flex rounded-xl shadow-xl w-[500px] h-[500px]">
+      <div class="flex m-3 p-3">
+        <input id="forward_button" type="button" value=">" class="w-[80px] h-[80px] rounded-md text-[70px]">
+      </div>
     </div>
-    <div class="main_page"></div>
+  </main>
 </body>
+
 </html>
+
+<script src="editor.js"></script>

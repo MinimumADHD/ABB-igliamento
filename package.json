@@ -1,0 +1,19 @@
+{
+  "name": "abb-igliamento",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./input.css -o ./style.css",
+    "watch": "npx tailwindcss -i ./input.css -o ./style.css --watch",
+    "build_editor": "npx tailwindcss -i ./editor_page/input.css -o ./editor_page/style.css",
+    "watch_editor": "npx tailwindcss -i ./editor_page/input.css -o ./editor_page/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
